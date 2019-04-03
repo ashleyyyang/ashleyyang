@@ -126,7 +126,7 @@ html, body {
   .header-bar {
     margin:0;
     position: relative;
-    background-color: #6184FF;
+    background-color: #002BC5;
     height: 25%;
     width:100%;
     min-height: 200px;
@@ -210,7 +210,7 @@ html, body {
   .intro-text {
     position: relative;
     top:-20px;
-  color:#6184FF;
+  color:#002BC5;
     padding-left:40px;
     padding-right:50%;
     padding-top: 0%;
@@ -407,12 +407,10 @@ html, body {
   .footer {
     position: relative;
     bottom:0;
-  
     width:100%;
-  min-height: 100px;
-  padding:20px;
-  
-      background-color: #6184FF;
+    min-height: 100px;
+    padding:20px;
+    background-color: #002BC5;
   }
   
   @media screen and(max-width:800px) {

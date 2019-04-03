@@ -126,7 +126,7 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 .header-bar {
   margin:0;
   position: relative;
-  background-color: #9DD2F6;
+  background-color: #002BC5;
   height: 25%;
   width:100%;
   min-height: 200px;
@@ -209,7 +209,7 @@ background-color: #EC9462;
 .intro-text {
   position: relative;
   top:-20px;
-  color: #9DD2F6;
+  color: #002BC5;
   padding-left:40px;
   padding-right:50%;
   padding-top: 0%;
@@ -403,7 +403,7 @@ img {
 min-height: 100px;
 padding:20px;
 
-    background-color: #9DD2F6;
+    background-color: #002BC5;
 }
 
 @media screen and(max-width:800px) {
