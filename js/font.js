@@ -24,7 +24,7 @@ $(document).ready(function(){
   })
 })
 
-
+/*
 var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
@@ -39,3 +39,31 @@ preload(
     "http://ashleyyang.ca/art/italy.jpg",
     "http://ashleyyang.ca/art/self-portrait.jpg"
 )
+*/
+
+
+function preloader() {
+	if (document.images) {
+		var img1 = new Image();
+		var img2 = new Image();
+		var img3 = new Image();
+
+		img1.src = "http://ashleyyang.ca/art/doggos.png";
+		img2.src = "http://ashleyyang.ca/art/self-portrait.jpg";
+		img3.src = "http://ashleyyang.ca/art/syde_logo1.png";
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+addLoadEvent(preloader);
