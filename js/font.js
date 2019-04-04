@@ -59,14 +59,14 @@ function afterLoad(e) {
 $(document).ready(function(){
    
    $("#image1").addImage(
-       "/art/doggos.png", 
+       "http://ashleyyang.ca/art/doggos.png", 
        beforeLoad,
        afterLoad
    );
 
 
    $("#image2").addImage(    
-       "/art/syde_logo1.png", 
+       "http://ashleyyang.ca/art/syde_logo1.png", 
        beforeLoad,
        afterLoad
    );
