@@ -37,6 +37,17 @@ html, body {
   :root {
     --mainColor: #EC9462;
   }
+
+  :root:before {
+    content: url(/art/doggos.png)
+             url(/art/syde_logo1.png);
+             
+    /* partial fallback */
+    background-image: url(/art/space-bun.png);
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+  }
   
   a {
     background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
