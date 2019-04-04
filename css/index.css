@@ -26,12 +26,10 @@ flex-flow: wrap;
 
 *, *:before, *:after {
   box-sizing: inherit;
-
-}
-
-* {
   -webkit-overflow-scrolling: touch;
 }
+
+
 
 img {
   max-width: 100%;

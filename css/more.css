@@ -24,6 +24,7 @@ html, body {
   
   *, *:before, *:after {
     box-sizing: inherit;
+    -webkit-overflow-scrolling: touch;
   }
   
   img {
