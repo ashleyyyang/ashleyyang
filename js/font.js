@@ -35,7 +35,7 @@ function preload() {
 
 //-- usage --//
 preload(
-    "art/doggos.png",
-    "art/italy.jpg",
-    "art/self-portrait.jpg"
+    "/art/doggos.png",
+    "/art/italy.jpg",
+    "/art/self-portrait.jpg"
 )
