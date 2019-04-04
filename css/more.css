@@ -39,11 +39,11 @@ html, body {
   }
 
   :root:before {
-    content: url(/art/doggos.png)
-             url(/art/syde_logo1.png);
+    content: url(art/doggos.png)
+             url(art/syde_logo1.png);
              
     /* partial fallback */
-    background-image: url(/art/space-bun.png);
+    background-image: url(art/space-bun.png);
     visibility: hidden;
     position: absolute;
     left: -999em;
