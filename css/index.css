@@ -18,8 +18,7 @@ body {
     font-size: 1.5rem;
     display:flex;
 flex-flow: wrap;
-overflow-y: scroll; /* has to be scroll, not auto */
--webkit-overflow-scrolling: touch;
+
 
 }
 
@@ -27,6 +26,11 @@ overflow-y: scroll; /* has to be scroll, not auto */
 
 *, *:before, *:after {
   box-sizing: inherit;
+
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
 }
 
 img {
