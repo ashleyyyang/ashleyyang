@@ -35,7 +35,7 @@ function preload() {
 
 //-- usage --//
 preload(
-    "/art/doggos.png",
-    "/art/italy.jpg",
-    "/art/self-portrait.jpg"
+    "http://ashleyyang.ca/art/doggos.png",
+    "http://ashleyyang.ca/art/italy.jpg",
+    "http://ashleyyang.ca/art/self-portrait.jpg"
 )
