@@ -24,65 +24,53 @@ $(document).ready(function(){
   })
 })
 
-/*
-var images = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
+
+
+
+$.fn.addImage = function(src, fnBefore, fnAfter){ 
+  return this.each(function(){
+       var i = new Image();
+       i.src = src;
+       /*    if you want to make sure the loader displays correctly ,
+           you could set CSS width/height here OR you could set a style
+           as I have done.
+       */
+       //$(this).css({"width":i.width, "height":i.height});
+       $(i).fadeTo(0,0);
+       fnBefore(i)
+       $(i).bind("load", i, fnAfter); 
+       this.appendChild(i);
+  }); 
+}     
+
+
+function beforeLoad(el) {
+   console.log("Before image load")
+   $(el).fadeOut();
 }
 
-//-- usage --//
-preload(
-    "http://ashleyyang.ca/art/doggos.png",
-    "http://ashleyyang.ca/art/italy.jpg",
-    "http://ashleyyang.ca/art/self-portrait.jpg"
-)
 
-
-
-function preloader() {
-	if (document.images) {
-		var img1 = new Image();
-		var img2 = new Image();
-		var img3 = new Image();
-
-		img1.src = "http://ashleyyang.ca/art/doggos.png";
-		img2.src = "http://ashleyyang.ca/art/self-portrait.jpg";
-		img3.src = "http://ashleyyang.ca/art/syde_logo1.png";
-	}
+function afterLoad(e) {
+   console.log("After image load")
+   $(e.target).fadeTo(500,1)
+       //.parent().removeAttr("style");//can remove parent css here if you like
 }
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			if (oldonload) {
-				oldonload();
-			}
-			func();
-		}
-	}
-}
-addLoadEvent(preloader); */
+
+$(document).ready(function(){
+   
+   $("#image1").addImage(
+       "http://ashleyyang.ca/art/doggos.png", 
+       beforeLoad,
+       afterLoad
+   );
 
 
-$(function(){
-  $.each(document.images, function(){
-             var this_image = this;
-             var src = $(this_image).attr('src') || '' ;
-             if(!src.length > 0){
-                 //this_image.src = options.loading; // show loading
-                 var lsrc = $(this_image).attr('lsrc') || '' ;
-                 if(lsrc.length > 0){
-                     var img = new Image();
-                     img.src = lsrc;
-                     $(img).load(function() {
-                         this_image.src = this.src;
-                     });
-                 }
-             }
-         });
+   $("#image2").addImage(    
+       "http://ashleyyang.ca/art/syde_logo1.png", 
+       beforeLoad,
+       afterLoad
+   );
+
+
 });
+
