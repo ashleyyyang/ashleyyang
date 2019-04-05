@@ -152,7 +152,7 @@ html, body {
     overflow: hidden;
   z-index:100;
     padding: 0px;
-    position: sticky;
+    position: sticky !important;
     top: -24px;
     margin-top:-24px;
     margin-bottom:-24px;
