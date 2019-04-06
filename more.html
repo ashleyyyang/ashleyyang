@@ -42,6 +42,20 @@ U  \ V  V /  U|_____|  |_____|  \____|\_)-\___/  |_|  |_|  |_____|
   gtag('config', 'UA-136768197-1');
 </script>
 
+
+<script>
+    window.addEventListener('load', function(){
+        var allimages= document.getElementsByTagName('img');
+        for (var i=0; i<allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+    </script>
+
+    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,8 +133,8 @@ U  \ V  V /  U|_____|  |_____|  \____|\_)-\___/  |_|  |_|  |_____|
                         <div class="content">
                             <a href="more/art" class="thumbnail">
                                 <div class="content-overlay"></div>
-                                <div id="image1" class="image">
-                                <img class="content-image" src="art/doggos.png"></div>
+                                
+                                <img class="content-image" src="" data-src="art/doggos.png">
                                 <div class="content-details">
                                 <h3 class="content-title">Art</h3>
  
