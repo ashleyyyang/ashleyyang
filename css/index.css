@@ -39,7 +39,7 @@ img {
   
 
 :root {
-  --mainColor: #EC9462;
+  --mainColor: #EB6600;
 }
 
 a {
@@ -70,16 +70,22 @@ a:hover {
 *********************************************************************************** */
 
   ::-moz-selection { 
-      background: #EC9462 }
+      background: var(--mainColor) }
   ::selection { 
-      background: #EC9462 }
+      background: var(--mainColor) }
 
 
 
 /* PAGES *******************************************************************************
 ***************************************************************************************/
 
-
+.sun-img {
+  height: 50px;
+  width: 50px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  display: inline-block;
+}
 
 
 .sun {
@@ -164,7 +170,7 @@ z-index:100;
 
 .nav-bar a {
   text-decoration: none;
-  color: #EC9462;
+  color: var(--mainColor);
   font-size: 1.3rem;
   background: none;
 }
@@ -172,7 +178,7 @@ z-index:100;
 .nav-bar a:hover {
   text-decoration: none;
 color: #ffffff;
-background-color: #EC9462;
+background-color: var(--mainColor);
 }
 
 

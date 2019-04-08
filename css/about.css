@@ -33,7 +33,7 @@ html, body {
   
   
   :root {
-    --mainColor: #EC9462;
+    --mainColor: #EB6600;
   }
   
   a {
@@ -62,9 +62,9 @@ html, body {
   *********************************************************************************** */
   
     ::-moz-selection { 
-        background: #EC9462 }
+        background: var(--mainColor) }
     ::selection { 
-        background: #EC9462 }
+        background: var(--mainColor) }
   
   
         
@@ -72,7 +72,13 @@ html, body {
   ***************************************************************************************/
   
   
-  
+  .sun-img {
+    height: 50px;
+    width: 50px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    display: inline-block;
+  }
   
   .sun {
     z-index:0;
@@ -156,7 +162,7 @@ html, body {
   
   .nav-bar a {
     text-decoration: none;
-    color: #EC9462;
+    color: var(--mainColor);
     font-size: 1.3rem;
     background: none;
   }
@@ -164,7 +170,7 @@ html, body {
   .nav-bar a:hover {
     text-decoration: none;
   color: #ffffff;
-  background-color: #EC9462;
+  background-color: var(--mainColor);
 
   }
   
@@ -259,22 +265,33 @@ html, body {
     .about-text {
         position:relative;
 
-        padding-left: 40px;
+        padding-left: 100px;
+        padding-right:100px;
+
+    }
+
+    @media screen and (max-width:800px) {
+      .about-text {
+        padding-left:40px;
         padding-right:40px;
+      }
 
     }
 
     .about-me img {
         float: left; 
         position: relative; 
-        width:400px; 
-        padding: 40px;
+        width:300px; 
+        padding-right: 40px;
+        padding-bottom: 20px;
     }
 
     @media screen and (max-width:800px) {
         .about-me img {
             float: none;
-            margin:auto;
+
+            padding:0;
+            width:40vw;
             text-align: center;
         }
     }
