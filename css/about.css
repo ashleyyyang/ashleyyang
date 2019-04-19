@@ -274,13 +274,21 @@ html, body {
       overflow: hidden;
     }
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:950px) {
+      .about-text {
+        padding-left:80px;
+        padding-right:80px;
+      }
+
+    }
+
+    @media screen and (max-width:650px) {
       .about-text {
         padding-left:40px;
         padding-right:40px;
       }
 
-    }
+    }   
 
     .about-me img {
         float: left; 
@@ -290,7 +298,7 @@ html, body {
         padding-bottom: 20px;
     }
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:950px) {
         .about-me img {
             float: none;
             padding:0;
