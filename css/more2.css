@@ -15,11 +15,18 @@ html, body {
   
       font-family: 'Karla', sans-serif;
       background-color: #ffffff;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       display:flex;
   flex-flow: wrap;
   }
   
+  p {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
   
   
   *, *:before, *:after {
@@ -171,7 +178,7 @@ html, body {
   .nav-bar a {
     text-decoration: none;
     color: var(--mainColor);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     background: none;
   }
   
