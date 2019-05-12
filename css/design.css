@@ -138,7 +138,17 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 .postmedia-header-bar {
   margin:0;
   position: relative;
-  background-color: #011036;
+  background-color: #FFD457;
+  height: 25%;
+  width:100%;
+  min-height: 200px;
+
+}
+
+.midsun-header-bar {
+  margin:0;
+  position: relative;
+  background-color: #2C3243;
   height: 25%;
   width:100%;
   min-height: 200px;
@@ -277,6 +287,10 @@ color:#002BC5;
       padding-left: 200px;
       padding-right:200px;
 
+  }
+
+  .about-text img {
+    width: 100%;
   }
 
   .about-text p, ul {
@@ -476,7 +490,20 @@ img {
 min-height: 100px;
 padding:20px;
 
-    background-color: #011036;
+    background-color: #FFD457;
+}
+
+
+
+.midsun-footer {
+  position: relative;
+  bottom:0;
+
+  width:100%;
+min-height: 100px;
+padding:20px;
+
+    background-color: #2C3243;
 }
 
 @media screen and(max-width:800px) {
