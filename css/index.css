@@ -388,14 +388,25 @@ background-color: var(--mainColor);
 .work {
     position: relative;
     width:100%;
-    padding-left:40px;
+    padding-left:40px; /* 100 px*/
     padding-right:40px;
 
     padding-bottom:5%;
-
-
-
 }
+
+
+
+
+
+@media screen and (max-width:800px) {
+  .work h3, h2{
+    text-align: center;
+    width:100%;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+}
+
 
 
 
