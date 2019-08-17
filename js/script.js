@@ -5,7 +5,7 @@ $(document).ready(function() {
  
    $( ".card" ).hover(
    function() {
-     $(this).addClass('shadow').css('cursor', 'pointer'); 
+     $(this).addClass('shadow').css('cursor'); 
    }, function() {
      $(this).removeClass('shadow');
    }
