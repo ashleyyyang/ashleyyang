@@ -137,6 +137,8 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 
 }
 
+
+
 .header-bar-text {
   color: #ffffff;
   position: absolute;
@@ -156,7 +158,6 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 
 @media screen and (max-width:800px) {
   .work h3, h2{
-    text-align: center;
     width:100%;
     padding-left: 20px;
     padding-right:20px;
