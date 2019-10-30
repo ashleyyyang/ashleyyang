@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   margin:0;
   padding:0;
-  overflow-x: hidden; 
+
   
 }
 
@@ -14,6 +14,7 @@ body {
     font-size: 1.2rem;
     display:flex;
   flex-flow: wrap;
+  overflow-x: hidden; 
 
 
 }
@@ -30,6 +31,8 @@ h1 {
 *, *:before, *:after {
   box-sizing: inherit;
   -webkit-overflow-scrolling: touch;
+  margin:0;
+  padding:0;
 }
 
 
@@ -129,31 +132,79 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 
 
 .header-bar {
-  margin:0;
+  top:0;
+  left:0;
+  background-color: white;
+  position: fixed;
+  width:100%;
+  z-index:9000000000;
+  opacity:0.7;
+
+}
+
+.header-bar:hover {
+  opacity:1.0;
+
+}
+
+.header-bar img {
+  min-width: 50px;
+  padding-top:20px;
+  padding-left:20px;
+  display: block !important;
+}
+
+.header-bar a:hover img {
+position: relative;
+}
+
+
+.header-bar-hidden {
+  top:0;
+  left:0;
+  background-color: white;
   position: relative;
-  background-color: #002BC5;
-  height: 3%;
   width:100%;
 
 }
 
 
 
-.header-bar-text {
-  color: #ffffff;
-  position: absolute;
-  bottom:0;
-  left:0;
-  padding-left:40px;
-  padding-right:20px;
-  margin-bottom:-8px;
+.intro {
+  min-height:100%;
+  min-height:100vh;
 
+
+  display: flex;
+  align-items: center;
 }
 
 
+.project1, project-2, project-3 {
+  width:100%;
+}
+
+.project-1:hover {
+  background-color: #A59DFF;
+}
 
 
+.project-2:hover {
+  background-color: #FFEDED;
+}
 
+.project-3:hover {
+  background-color: #EBF8FF;
+}
+
+
+.about a img { display:none; }
+
+.about a:hover img {
+  display:block; 
+  position: fixed;
+  max-width:300px;
+}
 
 
 
@@ -164,10 +215,63 @@ img {
 	height: auto;
 }
 
+:root {
+  --figmaWidth: 100%;
+  --blue: #000000
+}
 
 
+.figma {
+  width: var(--figmaWidth);
+  margin: auto;
+  height: calc(0.5625 * var(--figmaWidth)) vw;
+  display: flex;
+  align-items: center;
+}
 
     
+
+body {
+  color: var(--blue);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+blockquote {
+  background: white;
+  padding: 20px 30px 20px 30px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.stacked {
+  border: solid 2px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 13px 13px 0 0 white,
+              15px 15px 0 0 var(--blue),
+              15px 11px 0 0 var(--blue),
+              11px 15px 0 0 var(--blue);
+}
+
+.shadow-quote {
+  border: solid 2px;
+  box-shadow: 15px 15px 0 0 var(--blue);
+}
+
+.rule {
+  position: relative;
+  left: 7px;
+  background: lighten(var(--blue), 40%);
+  box-shadow: -2px 0 0 var(--blue),
+              -4px 0 0 lighten(var(--blue), 40%),
+              -7px 0 0 var(--blue);
+}
+
 
     
         
