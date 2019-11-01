@@ -263,6 +263,13 @@ blockquote {
   box-shadow: 15px 15px 0 0 var(--blue);
 }
 
+.shadow-quote-about {
+  border: solid 2px;
+  box-shadow: 15px 15px 0 0 #002BC5;
+}
+
+
+
 .rule {
   position: relative;
   left: 7px;
