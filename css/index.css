@@ -154,9 +154,22 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
   display: block !important;
 }
 
+.header-bar a:hover {
+  color: #EB6600;
+
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+}
+
+
 .header-bar a:hover img {
 position: relative;
 }
+
+
 
 
 .header-bar-hidden {
@@ -173,6 +186,9 @@ position: relative;
 .intro {
   min-height:100%;
   min-height:100vh;
+
+  margin-top:-50px;
+  margin-bottom:-100px;
 
 
   display: flex;
