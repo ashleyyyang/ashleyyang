@@ -298,8 +298,8 @@ blockquote {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #D0D0D0;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -311,7 +311,7 @@ blockquote {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #6A6A6A;
 }
 
 /* Style the accordion panel. Note: hidden by default */
