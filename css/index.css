@@ -4,25 +4,20 @@ html, body {
   width: 100%;
   margin:0;
   padding:0;
-
-  
 }
 
 body {
-    font-family: 'Karla', sans-serif;
-    background-color: #ffffff;
-    font-size: 1.2rem;
-    display:flex;
+  font-family: 'Karla', sans-serif;
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  display:flex;
   flex-flow: wrap;
   overflow-x: hidden; 
-
-
 }
 
 p, li {
   font-size: 1.1rem;
 }
-
 
 h1 {
   font-size: 2.4rem;
@@ -36,12 +31,16 @@ h1 {
 }
 
 
-  
 
+/* VARIABLES */
 :root {
   --mainColor: #EB6600;
+  --blue: #000000;
 }
 
+
+
+/* LINKS */
 a {
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
     background-position: 0 100%;
@@ -60,91 +59,36 @@ a:hover {
 }
 
 
-  
-  a:hover {
-    cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
-  url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
-  }
 
-
-  /* SELECTION COLOR *****************************************************************************
-*********************************************************************************** */
-
-  ::-moz-selection { 
-      background: var(--mainColor) }
-  ::selection { 
-      background: var(--mainColor) }
-
-
-
-/* PAGES *******************************************************************************
-***************************************************************************************/
-
-.sun-img {
-  height: 50px;
-  width: 50px;
-  background-color: var(--mainColor);
-  border-radius: 50%;
-  display: inline-block;
-}
-
-
-.sun {
-  z-index:0;
-/* 
- * initial position center of the circle path
- */
-position: absolute;
-left: 40%;
-bottom: -90%;
-
-
--webkit-animation: mySunset 15s linear infinite; /* Chrome, Safari 5 */
-   -moz-animation: mySunset 15s linear infinite; /* Firefox 5-15 */
-     -o-animation: mySunset 15s linear infinite; /* Opera 12+ */
-        animation: mySunset 15s linear infinite; /* Chrome, Firefox 16+, 
-                                                  IE 10+, Safari 5 */
-
-}
-
-
-@-webkit-keyframes mySunset {
-from { -webkit-transform: rotate(204deg) translateX(300px) rotate(-204deg); }
-to   { -webkit-transform: rotate(337deg) translateX(335px) rotate(-337deg); }
-}
-
-@-moz-keyframes mySunset {
-from { -moz-transform: rotate(204deg) translateX(300px) rotate(-204deg); }
-to   { -moz-transform: rotate(337deg) translateX(335px) rotate(-337deg); }
-}
-
-@-o-keyframes mySunset {
-from { -o-transform: rotate(204deg) translateX(300px) rotate(-204deg);}
-to   { -o-transform: rotate(337deg) translateX(335px) rotate(-337deg); }
-}
-
-@keyframes mySunset {
-from { transform: rotate(204deg) translateX(300px) rotate(-204deg);}
-to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
+/* CURSOR */
+a:hover {
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
+url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
 }
 
 
 
+/* HIGHLIGHT */
+::-moz-selection { 
+    background: var(--mainColor) }
+::selection { 
+    background: var(--mainColor) }
 
+
+
+/* HEADER BAR */
 .header-bar {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: white;
   position: fixed;
-  width:100%;
-  z-index:9000000000;
-  opacity:0.7;
-
+  width: 100%;
+  z-index: 9000000000;
+  opacity: 0.7;
 }
 
 .header-bar:hover {
-  opacity:1.0;
-
+  opacity: 1.0;
 }
 
 .header-bar img {
@@ -155,8 +99,7 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
 }
 
 .header-bar a:hover {
-  color: #EB6600;
-
+  color: var(--mainColor);
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
@@ -164,66 +107,36 @@ to   { transform: rotate(337deg) translateX(335px) rotate(-337deg); }
   text-decoration: none;
 }
 
-
 .header-bar a:hover img {
-position: relative;
-}
-
-
-
-
-.header-bar-hidden {
-  top:0;
-  left:0;
-  background-color: white;
   position: relative;
-  width:100%;
-
 }
 
 
 
+/* INTRO */
 .intro {
   min-height:100%;
   min-height:100vh;
-
   margin-top:-50px;
   margin-bottom:-100px;
-
-
   display: flex;
   align-items: center;
 }
 
 
-.project1, project-2, project-3 {
+
+/* CARDS */
+.project-2 {
   width:100%;
 }
-
-.project-1:hover {
-  background-color: #A59DFF;
-}
-
 
 .project-2:hover {
   background-color: #FFEDED;
 }
 
-.project-3:hover {
-  background-color: #EBF8FF;
-}
 
 
-.about a img { display:none; }
-
-.about a:hover img {
-  display:block; 
-  position: fixed;
-  max-width:300px;
-}
-
-
-
+/* IMAGES */
 img {
   display: block;
 	border: 0;
@@ -231,26 +144,9 @@ img {
 	height: auto;
 }
 
-:root {
-  --figmaWidth: 100%;
-  --blue: #000000
-}
 
 
-.figma {
-  width: var(--figmaWidth);
-  margin: auto;
-  height: calc(0.5625 * var(--figmaWidth)) vw;
-  display: flex;
-  align-items: center;
-}
-
-    
-
-body {
-  color: var(--blue);
-}
-
+/* BLOCKQUOTES */
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -279,13 +175,6 @@ blockquote {
   box-shadow: 15px 15px 0 0 var(--blue);
 }
 
-.shadow-quote-about {
-  border: solid 2px;
-  box-shadow: 15px 15px 0 0 #002BC5;
-}
-
-
-
 .rule {
   position: relative;
   left: 7px;
@@ -296,7 +185,9 @@ blockquote {
 }
 
 
-/* Style the buttons that are used to open and close the accordion panel */
+
+/* ACCORDIONS */
+/* Accordion button */
 .accordion {
   background-color: #000;
   color: #fff;
@@ -309,13 +200,12 @@ blockquote {
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Accordion hover */
 .active, .accordion:hover {
   background-color: #6A6A6A;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-
+/* Accordion panel */
 .panel {
   padding: 18px 18px;
   background-color: #eee;
@@ -328,11 +218,7 @@ blockquote {
 
 
 
-
-
-
-
-    
+/* Footer */
 .footer {
   margin: 50px auto;
 }        
