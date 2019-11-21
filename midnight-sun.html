@@ -22,6 +22,7 @@
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/bouncyball.css">
 
 
@@ -42,125 +43,102 @@
 
 <body>
 
-    <div class="header-bar" style="background-color:#2C3243"></div>
+    <div class="header-bar">
+
+            <div class="row py-2 px-2">
+                <div class="col-sm-2">
+            <a href="http://ashleyyang.ca"><img src="img/logo.svg" style="width:5%"></a>
+            </div>
+    
+            <div class="col-sm-8 pt-4">
+                <div class="container">
+                        <p><a href="http://ashleyyang.ca">Design</a> / <a href="not-design" style="background:none;">Not Design</a> / <a href="about" style="background:none;">About</a></p>
+            </div>
+            </div>
+            </div>
+    </div>
+
 
     <div class="container-fluid">
 
-            <div class="row">
-                <div class="col-sm-2">
-                </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
 
-                <div class="col-sm-8 py-5">
-                        <p><a href="https://ashleyyang.ca">Home</a></p><br>
-                        <h3><strong>Midnight Sun Solar Car Team</strong></h3>
-                        <h4>Driver/Center Console Displays</h4>
-                        
-
+            <div class="col-md-8 py-5">
+                    <div class="intro">
+                            <div class="container">
+                        <h1><strong>Midnight Sun</strong></h1> <!-- , infotainment system display, and dashboard interactions -->
+                        <p><small>UX DESIGN, CASE STUDY</small></p>
+                        <p>Leading the driver display design for the Midnight Sun XIV solar race car.</p>
                         <p>
-                        <strong>Project duration:</strong> may 2019 - present<br></p>
-                        <p>* Leading the user experience design of the driver interactions (dashboard and center console screen) for the 2020 Midnight Sun solar car, MSXIV.<br>
-
-                        <p>My work designing the user experience of Midnight Sun's 2020 solar car includes running primary research sessions
-                            to understand the users, conducting systems analysis and usability testing to determine the best possible 
-                            means of fulfilling the users' needs (and safety regulations), and communicating with the electrical and mechanical teams to validate designs.
-                            The design process spans the entirety of the car dashboard, but this project is focused on the driver and center console displays.
-                            
-                        </p><br>
-
-                        <h4><strong>The story</strong></h4>
-                        <p>When I interviewed three drivers of the previous solar car, MSXII, about their overall 
-                            experiences of driving it, I found out they had common issues relating to the driver display:                         
-                            <ul>
-                            <li>Lack of feedback/signals from the car made it difficult to troubleshoot when something went wrong</li>
-                            <li>The amount of irrelevant graphs and data on the screen obstructed them from seeing what was important to them
-                                (speed, state of charge, turn signals)</li>
-                            <li>Glare from the sun prevented drivers from reading the screen easily</li>
-                        </ul></p>
-                        
-                           <p>Based on this feedback, the main goals I focused on when designing the new screen were ensuring that the screen was easy to read and only 
-                            relevant information was on the driver display, since safety was the most 
-                            important factor in the design.
-                         </p>
-                         <div class="row pb-4">
-                                <div class="col-sm-6">
-                                    <img src="img/DD_1.png">
-                                </div>
-        
-                                <div class="col-sm-6">
-                                    <p><strong>An early screen design.</strong> After talking 
-                                        to some of the drivers about this design, I discovered some aspects that needed to be changed:</p>
-                                    <ul>
-                                        <li>Having the faults on the display (bottom right) was not feasible for electrical reasons, 
-                                            and the grouping was confusing for the drivers
-                                        </li>
-                                        <li>The speed and battery were self-explanatory, and the labels just added visual clutter</li>
-                                        <li>The parking brake signal was not intuitive as to what its purpose was (to alert drivers to 
-                                            engage the parking brake before shifting to drive mode if they did not)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                         <p>I was able to gather feedback from the users before testing an initial driver display design in the physical car mockup. 
-                             Testing the screen in the car mockup was important as it gave both the designers and the drivers a realistic 
-                             idea about the feasibility of each aspect of the design, including data visualization, screen size, and screen location.
-                         </p>
-
-
-                         
-                            <div class="row pb-4">
-                                    <div class="col-sm-6">
-                                        <img src="img/driver screen.png">
-                                    </div>
-            
-                                    <div class="col-sm-6">
-                                        <p><strong>Screen design used in the first usability testing session.</strong> Following feedback from the users, 
-                                        I removed the visual clutter to make the screen minimal but informative at a short glance. The drivers/passengers in the usability session 
-                                        mentioned that:</p>
-                                        <ul>
-                                            <li>They would still like to see the number of miles driven</li>
-                                            <li>They would like a way to set cruise control easily</li>
-                                        </ul>
-                                        <p>The design changes for these findings will be applied for the next usability testing session.</p>
-                                    </div>
-                                </div>
-
-                         <p>I approached the center console screen design in a different way, since a previous design did not already exist for it. 
-                             
-                         </p>
-
-                         <div class="row pb-4">
-                                <div class="col-sm-6">
-                                        <a href="https://invis.io/43SB4QRUZTY" target="_blank"><img src="img/array telemetry screen 1.3.png"></a>
-                                        <p>Click image to view InVision prototype!</p>
-                                </div>
-        
-                                <div class="col-sm-6">
-                                    <p><a href="https://www.kristenshiozaki.me/" target="_blank">Kristen</a> and I worked together to build a quick prototype for the telemetry screen, 
-                                        which we used in a usability testing session to gain a better understanding of what types of data visualization would be most useful to the drivers/passengers during the competitions—do they need to see 
-                                        hard numbers, or a graph to show change in a variable over time? So far, the design has been easy to navigate with a <strong>task completion rate of 100%</strong>.
-                                    </p><br>
-                                </div>
-                            </div>
-
-
-                            <h4><strong>Next steps</strong></h4>
-                            <p>Because many considerations for the designs depend on the dashboard height 
-                                and seat placement which have not been finalized, it will be difficult to test the screen design accurately in the physical mockup. 
-                                But for the next iteration, I would like to test the new designs with more specific KPIs, including the time drivers' eyes are 
-                            off the road when completing tasks.</p>
-                            <p>Feel free to <a href="mailto:ashley.yang@uwaterloo.ca">email</a> me for more details about this project!</p>
-                            
-                        <!--<iframe width="100%" scrolling="no" src="//invis.io/TKSB4QS6GWB" frameborder="0" allowfullscreen></iframe>-->
-
-                        
-                </div>
-            
-
-            </div>         
+                            <strong>Team:</strong> Adrian and Robi (Interiors Leads), Arshan (Firmware Lead), and me!<br />
+                            <strong>Role:</strong> UX Project Lead<br />
+                            <strong>Duration:</strong> May 2019 - present<br />
+                        </p>
+                        <p><strong><a href="https://www.figma.com/proto/BXBbiYuPwe5wjETqAPD5Ah/Cultura-Prototype?scaling=scale-down&node-id=11%3A182" target="_blank">Prototype →</a></strong></p>
+                    </div>  
+                    </div>
+            </div>
         </div>
+
+
+        <div class="row"> <!-- banner img -->
+            <div class="col-sm-2">
+            </div>
+
+            <div class="col-md-8" style="background-color: black;">
+                <img src="img/midsun-main.png" style="width:50%; margin: 50px auto;">
+            </div>
+        </div>                      
+
+                        
+        <div class="row"> <!-- intro -->
+            <div class="col-sm-2"></div>
+
+            <div class="col-md-8 py-5">
+
+                    <blockquote class="shadow-quote"><strong>Midnight Sun builds a solar car from scratch every two years
+                        to compete at the American Solar Challenge (ASC). With Practicality as a multiplying factor in the 
+                        2020 ASC score, the new Interiors team was created to maximize our score and push the boundaries of consumer-centered solar vehicles.
+                        <br /><br />
+                        As the UX Lead within the 
+                        Interiors team, I tackled the question: 
+                        How might we 
+                        create the most intuitive, innovative, and safe driving experience?
+                        </strong></blockquote>
+            </div>
+        </div>
+
+
+
+        <div class="row"> <!-- what's next -->
+            <div class="col-sm-2"></div>
+
+            <div class="col-md-8 py-3">
+
+                <h2><strong>More details coming soon!</strong></h2>
+                 <p>Feel free to <a href="mailto:ashley.yang@uwaterloo.ca">contact</a> me for more information about this project!</p>
+                    
+                    
+            </div>
+        </div> 
+
+    </div>
         
 
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+    
+                    <div class="col-sm-8 py-4">
+                        <div class="footer text-center">
+                            <p><small>CODED BY <a href="http://ashleyyang.ca">ASHLEY YANG</a> ☺ </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
 
    <!-- js -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
