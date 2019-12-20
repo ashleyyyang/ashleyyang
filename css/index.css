@@ -114,16 +114,21 @@ url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
 
 
 /* INTRO */
-.intro {
+/* .intro {
   min-height:100%;
   min-height:100vh;
   margin-top:-50px;
   margin-bottom:-100px;
   display: flex;
   align-items: center;
+} */
+
+.intro {
+  padding-top:200px;
+  padding-bottom:40px;
+  display: flex;
+  align-items: center;
 }
-
-
 
 /* CARDS */
 .project-2 {
